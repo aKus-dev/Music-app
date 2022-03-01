@@ -7,10 +7,6 @@ export const HomePage = () => {
       <video autoPlay loop muted >
         <source src="./assets/bg.mp4" type="video/mp4" />
       </video>
-
-      <SearchMusic />
-
-
     </div>
   )
 }

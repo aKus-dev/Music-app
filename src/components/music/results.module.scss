@@ -1,0 +1,80 @@
+@import "../../scss/global/variables";
+@import "../../scss/global/mixins";
+
+.inputContainer {
+    background-color: $bg-light;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    input {
+        background-color: inherit;
+        border: none;
+        outline: none;
+        color: $white;
+        font-size: 1.7rem;
+        flex-grow: 1;
+
+        &::placeholder {
+            color: daren(#80849f, 20%);
+        }
+    }
+}
+
+.resultsContainer {
+    cursor: pointer;
+    position: relative;
+    background-color: $bg-light;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 75rem;
+    margin: 2rem auto 0 auto;
+
+    display: flex;
+    gap: 1.5rem;
+
+    img {
+        width: 10rem;
+        border-radius: .75rem;
+    }
+}
+
+.play {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+
+    background: linear-gradient(135deg, #9529ff, #cf4cff);
+    @include center-xy;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .group,
+    .duration {
+        font-size: 1.4rem;
+        color: $color-primary;
+    }
+
+    .duration {
+        color: #b04bfd;
+    }
+
+}
+
