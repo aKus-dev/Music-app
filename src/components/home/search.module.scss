@@ -1,0 +1,39 @@
+@import '../../scss/global/mixins';
+@import '../../scss/global/variables';
+
+.container {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(40px);
+    color: $white;
+
+    @include center-xy;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input {
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 85%;
+    outline: none;
+    max-width: 55rem;
+    font-size: 1.75rem;
+    background-color: #ffffff15;
+    color: $white;
+
+
+    &::placeholder {
+        color: darken($white, 25%);
+    }
+}
+
+.info {
+    padding-left: .5rem;
+    text-align: left;
+    font-size: 1.354rem;
+    color: darken($white, 15%);
+}
