@@ -12,6 +12,11 @@
     @include center-xy;
     flex-direction: column;
     gap: 2rem;
+
+    form {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .input {
