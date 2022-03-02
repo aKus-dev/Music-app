@@ -16,6 +16,7 @@ export const useControls = (audio: HTMLAudioElement) => {
 
     useEffect(
         () => {
+
             return () => {
                 audio.pause();
             }
