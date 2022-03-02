@@ -51,6 +51,7 @@ svg {
 
     .actualTime,
     .totalTime {
+        user-select: none;
         position: absolute;
         bottom: -18px;
         font-size: 1.4rem;
@@ -72,3 +73,7 @@ input[type="range"] {
     accent-color: #9529ff;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+}

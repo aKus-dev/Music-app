@@ -1,6 +1,13 @@
+import { useState } from 'react';
 import styles from './play.module.scss';
 
-export const Range = () => {
+interface RangeProps {
+    audio:HTMLAudioElement;
+}
+
+export const Range = ({audio}: RangeProps) => {
+
+
     return (
         <div className={styles.rangeContainer}>
             <input type="range" />

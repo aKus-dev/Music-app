@@ -38,8 +38,9 @@ export const ResultsPage = () => {
                             key={music.id}
                             title={music.title}
                             artist={music.artist.name}
-                            imgPath={music.album.cover_medium}
+                            imgPath={music.album.cover_big}
                             duration={music.duration}
+                            mp3={music.preview}
                         />
                     ))
                 }

@@ -6,5 +6,6 @@ export { SearchList } from "./music/SearchList";
 export { Controls } from "./play/Controls";
 export { Range } from "./play/Range";
 export { PlayerControls } from "./play/PlayerControls";
+export { BasicData } from "./play/BasicData";
 
 
