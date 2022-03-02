@@ -36,6 +36,14 @@ video {
     padding: 2rem;
 }
 
+.bg-light {
+    @include center-xy;
+    flex-direction: column;
+    background: linear-gradient(180deg, #1e213f, #2a2f57);
+    text-align: center;
+    min-height: 100vh;
+}
+
 .home-container {
     height: 100vh;
     padding-bottom: 6.5rem;

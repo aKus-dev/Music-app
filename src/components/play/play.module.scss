@@ -1,0 +1,74 @@
+@import '../../scss/global/mixins';
+@import '../../scss/global/variables';
+
+svg {
+    cursor: pointer;
+}
+
+.artist {
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+
+.img {
+    border-radius: 1.5rem;
+    margin-top: 1.5rem;
+    height: 350px;
+}
+
+.song {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
+.controlContainer {
+    width: 100%;
+}
+
+.controls {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.play {
+    cursor: pointer;
+    background: linear-gradient(135deg, #9529ff, #cf4cff);
+    padding: 1rem;
+    border-radius: 50%;
+    @include center-xy;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.rangeContainer {
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    max-width: 30rem;
+
+    .actualTime,
+    .totalTime {
+        position: absolute;
+        bottom: -18px;
+        font-size: 1.4rem;
+        color: $color-primary;
+    }
+
+    .actualTime {
+        left: 10px;
+    }
+
+    .totalTime {
+        right: 10px;
+    }
+}
+
+input[type="range"] {
+    margin-top: 2rem;
+    width: 100%;
+    accent-color: #9529ff;
+}
+

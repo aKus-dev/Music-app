@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HomePage, ResultsPage } from '../pages';
+import { HomePage, ResultsPage, PlayPage } from '../pages';
 
 export const AppRouter = () => {
   return (
@@ -7,6 +7,7 @@ export const AppRouter = () => {
         <Routes>
             <Route path="/" element={ <HomePage /> } />
             <Route path="/results" element={ <ResultsPage /> } />
+            <Route path="/play" element={ <PlayPage /> } />
         </Routes>
     </Router>
   )
