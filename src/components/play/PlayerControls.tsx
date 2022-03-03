@@ -9,6 +9,8 @@ import { Range } from '../';
 
 export const PlayerControls = () => {
 
+    // TODO Implementar lo de RANGE en el custom hook y pasarle la data por props
+
     const { mp3 } = useContext(SongContext);
     const audio = new Audio(mp3);
 
@@ -32,8 +34,8 @@ export const PlayerControls = () => {
                 <div className={styles.play} onClick={handleIsplaying}>
                     {
                         isPlaying
-                            ? <FontAwesomeIcon icon={faPlay} size="2x" color="#c9c9cf" />
-                            : <FontAwesomeIcon icon={faPause} size="2x" color="#c9c9cf" />
+                            ? <FontAwesomeIcon icon={faPause} size="2x" color="#c9c9cf" />
+                            : <FontAwesomeIcon icon={faPlay} size="2x" color="#c9c9cf" />
                     }
                 </div>
 

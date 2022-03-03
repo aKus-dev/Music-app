@@ -8,4 +8,6 @@ export { Range } from "./play/Range";
 export { PlayerControls } from "./play/PlayerControls";
 export { BasicData } from "./play/BasicData";
 
+export { Loading } from "./helpers/Loading";
+
 

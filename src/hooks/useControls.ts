@@ -3,13 +3,13 @@ import { useEffect, useState } from 'react';
 
 export const useControls = (audio: HTMLAudioElement) => {
 
-    const [isPlaying, setIsPlaying] = useState(false);
+    const [isPlaying, setIsPlaying] = useState(true);
 
     // Efects
     useEffect(
         () => {
 
-            isPlaying ? audio.pause() : audio.play();
+            isPlaying ? audio.play() : audio.pause();
 
         }, [isPlaying]
     )
